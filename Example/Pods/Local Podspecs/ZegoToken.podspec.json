@@ -1,0 +1,22 @@
+{
+  "name": "ZegoToken",
+  "version": "0.1.0",
+  "summary": "A short description of ZegoToken.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zegoim/ZegoToken_iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "LarryLuo": "Larryluo@zego.im"
+  },
+  "source": {
+    "git": "https://github.com/zegoim/ZegoToken_iOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ZegoToken/Classes/**/*"
+}

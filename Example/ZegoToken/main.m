@@ -2,8 +2,8 @@
 //  main.m
 //  ZegoToken
 //
-//  Created by LarryLuo1 on 03/29/2022.
-//  Copyright (c) 2022 LarryLuo1. All rights reserved.
+//  Created by LarryLuo on 03/29/2022.
+//  Copyright (c) 2022 LarryLuo. All rights reserved.
 //
 
 @import UIKit;

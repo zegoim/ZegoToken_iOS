@@ -1,0 +1,998 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		037D93EFA644C1519468F3C8CFA4EEAE /* ieee754.h in Headers */ = {isa = PBXBuildFile; fileRef = 4877F6217C3A47962DA1377B2237ADCB /* ieee754.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12FDC8030F3DEB3F7F8D5B32461B3525 /* strfunc.h in Headers */ = {isa = PBXBuildFile; fileRef = 54EB8C3EF3E6CCD5123B31F8E2852E02 /* strfunc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		198F162A1CC5B8B7E2BF46C5ECFE6012 /* ZegoServerAssistantImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A38F26976BDE5EE60163371329A7DB5 /* ZegoServerAssistantImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AF0C698576AE0A708E7FD88FD74AC2D /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8D8D8FAFD44BBEEC4C5A587244CDE5 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D86F3073F5E6E676027866F4EDD513C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 28081D558DD0B1C3090EBF57B81733C5 /* README.md */; };
+		2911864DE80508A54C0E8B6BF0AFC316 /* memorybuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A5F486917CA429F0890879531EF276 /* memorybuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EE681AC22DC8C553A0BD6F7585E51E2 /* memorystream.h in Headers */ = {isa = PBXBuildFile; fileRef = 62754F5FF7CBAD5AB9572A2EC7D4F97D /* memorystream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3050ACF4241A6EB5E3911FE3A13161BF /* encodedstream.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BC00710B5197C6BED650A805A25BB95 /* encodedstream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3191B07E1CB1F6A23FB9ECAB23804795 /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D8CCE559E54611BC3321BA8ECE8794 /* writer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382A4FA3C94DF19AEA7B5DA9D5198CAE /* pointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 446D2924E5BD0BB99A7771BF9C5E3818 /* pointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A7FF63D3C6FCD6E194E9FAA82139B63 /* swap.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D0A2914F6809EC696258274D5E9C14 /* swap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4280B54EA7E3E8596E2FAB968D27D995 /* encodings.h in Headers */ = {isa = PBXBuildFile; fileRef = 53C302BF53A578041D85E7BD8E882CD1 /* encodings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49C8DFD9C985E99DA3F05989F3AC6CBC /* ZegoToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B833B006FBE286B599AFC1AE3B156B /* ZegoToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49E95A159A48384CAC96C8BB0C57CDA1 /* Pods-ZegoToken_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 073DABAF4EE8491D29BA1C2C87E6151A /* Pods-ZegoToken_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DD25AB65A38D616604A8670CDE284AA /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 0261B1E56B8A7A44EB580E5A1B0CEAAD /* Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57DAB4F842C612EB5CE9EBFF127D23F3 /* prettywriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F0633A9D25984C27FC3E49DC6064238 /* prettywriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59055A15661004DC3FEFA929A2C4A865 /* ZegoToken.mm in Sources */ = {isa = PBXBuildFile; fileRef = A1356F2BB29BA9ED50D90484D1C56BB8 /* ZegoToken.mm */; };
+		636B22947416C82EB5143C6BBB2D2C3C /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 864E997333729BEBEEED9ACC65A2737D /* error.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B946EDFB902933BFD2264570BE6FD1D /* ZegoServerAssistantDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = A13346BE1930A15B247FABC9149669F9 /* ZegoServerAssistantDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		723C8C23048CFCA75317C1A4963E9BAD /* Base64.cc in Sources */ = {isa = PBXBuildFile; fileRef = E8305E46B1754381E7439288833DFF15 /* Base64.cc */; };
+		79DE978424DEE3A787ED908CFA43690B /* ZegoToken-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B71E33BA97B0804E1F6233C46449963 /* ZegoToken-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79FCEFF7749DCBAD8209D20082F1E710 /* Pods-ZegoToken_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD77D39CF2D8A3B93B8C51B939713143 /* Pods-ZegoToken_Tests-dummy.m */; };
+		7F925F5D599E325E30FC9D703ED1ABBF /* biginteger.h in Headers */ = {isa = PBXBuildFile; fileRef = 351ADE89C80D85712D313171751375DC /* biginteger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89BE78B7B05A23E44F06AC80C1B68960 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		900B53964841E8885EBC694336927F22 /* ZegoServerAssistant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA5416B43C073BDF062202CCD0202B4F /* ZegoServerAssistant.cpp */; };
+		910073290E4EFF8C430EBAC4C49B20EA /* json_tools.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F82390519AB2D91E57CBA9F72755198C /* json_tools.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		91BFFADE2B4F39F221ED9F36C09498AD /* strtod.h in Headers */ = {isa = PBXBuildFile; fileRef = 84DAC8300B59CE0A5F15BA1C47312BB1 /* strtod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91F844FCB9AB056BF6CAF66B44FE4A07 /* en.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C3280D41852DCE58B1CC7896B64662 /* en.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93858DF07DE6919DAA39F710B5C16163 /* ostreamwrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6132F354D00BA2897F7E692215A5F344 /* ostreamwrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		959598A62C4A8BD24365F5BB162E3609 /* istreamwrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B209067348F479138D43910ED2C8B8A6 /* istreamwrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96534897E4F4B80AFA710223940AA887 /* ZegoToken-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6361B125EDE7DA75C5BE314C55EEB2 /* ZegoToken-dummy.m */; };
+		97AC086687D510957824F5DF1D4A7788 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A179C370AC69625B9AD0AE8858A2E7BA /* allocators.h in Headers */ = {isa = PBXBuildFile; fileRef = F179366D874579F12A6E58F088B6AC46 /* allocators.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A22BBD94CD2A43B08879D148D111CEA2 /* diyfp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CD8B54266CAD934C3174156E8CE447A /* diyfp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A70D155795B5DE0A808AF7DDA38A1DFB /* ZegoCrypto.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BD936E00FCBDC23BAF736BCB372A2BC4 /* ZegoCrypto.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		A72C8E98C2CD6D7DDA8E8DA6EDE750EB /* stringbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E2CFB3F1C9DF7F8154703079FD17DB /* stringbuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F16AFD633078F77371EE1D2A143F94 /* ZegoServerAssistantImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3EB3CF9FAF043ACFCA257F49D260F /* ZegoServerAssistantImpl.cpp */; };
+		ACC08E25136A3A986EF835BFCCEB7CFC /* ZegoServerAssistant.h in Headers */ = {isa = PBXBuildFile; fileRef = C58E6343EEDADD0E20126843453BDA46 /* ZegoServerAssistant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B27CB3A70735CA8ADD55A31A241D226D /* schema.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D6F96790C8B6C775522CF40A7B22887 /* schema.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6B1C6FC7E4648F303DAA37478EFDDF4 /* dtoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1345DCE21B831C20D785DCD2ACC2C9 /* dtoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6EB44736BB4431FA6DE2D647F7B83CD /* ZegoCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25A61F8E1187830881BB9D8363E9DB87 /* ZegoCrypto.cpp */; };
+		C5F37B75B2F97F7219AB26F1ACB04A7E /* Pods-ZegoToken_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A01BEBFD3786E03F55C6EAC906EEB03D /* Pods-ZegoToken_Example-dummy.m */; };
+		D1A2583D6104572EF625917084982860 /* reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1782A9AE16548B6E07D8D1826A81D8DA /* reader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5E8C12289534153B3BDB573A4C71436 /* Pods-ZegoToken_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9075208F569693EE4AADF1304770FA99 /* Pods-ZegoToken_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB0F8622B93E7282EBF0BC07F05DF2CF /* meta.h in Headers */ = {isa = PBXBuildFile; fileRef = A35D4005FF0169231553725AE9CCC4E0 /* meta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB83D6BCE0E7AE59863B4084B30B7FC6 /* fwd.h in Headers */ = {isa = PBXBuildFile; fileRef = C11B7B3744C877F8F8CD79F4DCE71094 /* fwd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E09BBF932C1587FD72C815C615F0F0E2 /* stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 63DF88ED228E4ACCBC1F4DAB22584CEA /* stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E23C745066199EC8474733B4048F6D4A /* regex.h in Headers */ = {isa = PBXBuildFile; fileRef = 47DDCCFAB06513A141ABAA150D073881 /* regex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E31E49D1C856B16627F2F9B65C47EC18 /* README_EN.md in Sources */ = {isa = PBXBuildFile; fileRef = B9502CA5F8CC050E699128EB0C6EDF6E /* README_EN.md */; };
+		E34EB16613858C0D39C95FB2B404D4BA /* aes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5AC5B9F53AE9C03E6AF4B2DB74F40ED /* aes.cpp */; };
+		E6894AF66E848C6C0FAFF9E77B964CE6 /* filereadstream.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4319D8D32B453624596153D77D4A0C /* filereadstream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E930CB41E43A95430C21AB555564151D /* rapidjson.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDB1203A9AEEB2B0D49A936D441B40F /* rapidjson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAB97E9BA41AB9FB84F07B81F30CDDD8 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = B209B5EA7048D0F0F4B9032C5E2E237E /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECCFADACB7A96637F9D5D0ACBCCA465A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F3ED5F8A411BF4A05D773B107FDE7E29 /* filewritestream.h in Headers */ = {isa = PBXBuildFile; fileRef = 467D12B7814054512F041AC6FF3D560F /* filewritestream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F75F65F2AF71376ED0259434F329AF26 /* itoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 965BBFCF7717179711BE8A742A9666F7 /* itoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F79A909E338F87F79AC3BF61C62EF4CF /* pow10.h in Headers */ = {isa = PBXBuildFile; fileRef = A10C5E7278C34FEB4DDD7D3CE43A3906 /* pow10.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8F05708FFC8751BAAAC8601881263E6 /* document.h in Headers */ = {isa = PBXBuildFile; fileRef = C48605496AA104BD59F8DF5DC0DA2C6C /* document.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28E0526FE9BCC04FEF6F27DFBD03B09A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1E96DDD1ABD6BDAA28E9F623D75FE82;
+			remoteInfo = ZegoToken;
+		};
+		5DB932298DBA4E3D267B79DC0A7245F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D4BFB5B412CF9146C5E5CC7EB9F8240;
+			remoteInfo = "Pods-ZegoToken_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0261B1E56B8A7A44EB580E5A1B0CEAAD /* Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		049D3BEB7FDCBE784B64FF3BCB0563E5 /* Pods-ZegoToken_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZegoToken_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		073DABAF4EE8491D29BA1C2C87E6151A /* Pods-ZegoToken_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZegoToken_Example-umbrella.h"; sourceTree = "<group>"; };
+		09B833B006FBE286B599AFC1AE3B156B /* ZegoToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZegoToken.h; sourceTree = "<group>"; };
+		14776FCF3BB45656A46B981DE1872B7E /* Pods-ZegoToken_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZegoToken_Example-Info.plist"; sourceTree = "<group>"; };
+		1782A9AE16548B6E07D8D1826A81D8DA /* reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		1A38F26976BDE5EE60163371329A7DB5 /* ZegoServerAssistantImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZegoServerAssistantImpl.h; sourceTree = "<group>"; };
+		1CD8B54266CAD934C3174156E8CE447A /* diyfp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = diyfp.h; sourceTree = "<group>"; };
+		20039835D3D8FA9AEBD7772DAD8D0832 /* Pods-ZegoToken_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZegoToken_Tests"; path = Pods_ZegoToken_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A61F8E1187830881BB9D8363E9DB87 /* ZegoCrypto.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = ZegoCrypto.cpp; sourceTree = "<group>"; };
+		27A5F486917CA429F0890879531EF276 /* memorybuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = memorybuffer.h; sourceTree = "<group>"; };
+		28081D558DD0B1C3090EBF57B81733C5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ZegoToken/Classes/README.md; sourceTree = "<group>"; };
+		28B0B456ED082BBD718E826A2315308A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		324FEB5E8E94E25DAF885875249248A9 /* Pods-ZegoToken_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZegoToken_Example.release.xcconfig"; sourceTree = "<group>"; };
+		351ADE89C80D85712D313171751375DC /* biginteger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = biginteger.h; sourceTree = "<group>"; };
+		380D9667838A19714E9756F877720394 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3BC00710B5197C6BED650A805A25BB95 /* encodedstream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = encodedstream.h; sourceTree = "<group>"; };
+		446D2924E5BD0BB99A7771BF9C5E3818 /* pointer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pointer.h; sourceTree = "<group>"; };
+		467D12B7814054512F041AC6FF3D560F /* filewritestream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = filewritestream.h; sourceTree = "<group>"; };
+		47DDCCFAB06513A141ABAA150D073881 /* regex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = regex.h; sourceTree = "<group>"; };
+		4877F6217C3A47962DA1377B2237ADCB /* ieee754.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ieee754.h; sourceTree = "<group>"; };
+		4B71E33BA97B0804E1F6233C46449963 /* ZegoToken-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZegoToken-umbrella.h"; sourceTree = "<group>"; };
+		4CD9C5A2871181DBFA079E71CD2BF25A /* Pods-ZegoToken_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZegoToken_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		4ED3C43653D6CC0AA34206B188BB20AD /* ZegoToken */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZegoToken; path = ZegoToken.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FC60984D37A44D2814F75E653313C39 /* Pods-ZegoToken_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZegoToken_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5185D40A042BC864F96F819839F97C3F /* Pods-ZegoToken_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZegoToken_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		53C302BF53A578041D85E7BD8E882CD1 /* encodings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = encodings.h; sourceTree = "<group>"; };
+		54EB8C3EF3E6CCD5123B31F8E2852E02 /* strfunc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = strfunc.h; sourceTree = "<group>"; };
+		55B7CE816E6442C36425F0A0313DB176 /* Pods-ZegoToken_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZegoToken_Tests-Info.plist"; sourceTree = "<group>"; };
+		586D9F07D4FA5AF7B4AACFEF0280F83D /* Pods-ZegoToken_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZegoToken_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5E8D8D8FAFD44BBEEC4C5A587244CDE5 /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		6132F354D00BA2897F7E692215A5F344 /* ostreamwrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ostreamwrapper.h; sourceTree = "<group>"; };
+		62754F5FF7CBAD5AB9572A2EC7D4F97D /* memorystream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = memorystream.h; sourceTree = "<group>"; };
+		62C3280D41852DCE58B1CC7896B64662 /* en.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = en.h; sourceTree = "<group>"; };
+		63DF88ED228E4ACCBC1F4DAB22584CEA /* stream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = stream.h; sourceTree = "<group>"; };
+		68DA1FC8F2B7E18AD2CA40732AD43230 /* ZegoToken-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZegoToken-Info.plist"; sourceTree = "<group>"; };
+		6CA3EB3CF9FAF043ACFCA257F49D260F /* ZegoServerAssistantImpl.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = ZegoServerAssistantImpl.cpp; sourceTree = "<group>"; };
+		6D6F96790C8B6C775522CF40A7B22887 /* schema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = schema.h; sourceTree = "<group>"; };
+		72EBCA39231468208207BBB600F132D6 /* Pods-ZegoToken_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZegoToken_Example.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		77698FA2AF5CF09C3D47438BCC1D6A35 /* ZegoToken.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZegoToken.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7F0633A9D25984C27FC3E49DC6064238 /* prettywriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = prettywriter.h; sourceTree = "<group>"; };
+		84DAC8300B59CE0A5F15BA1C47312BB1 /* strtod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = strtod.h; sourceTree = "<group>"; };
+		864E997333729BEBEEED9ACC65A2737D /* error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		89D0A2914F6809EC696258274D5E9C14 /* swap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = swap.h; sourceTree = "<group>"; };
+		89D8CCE559E54611BC3321BA8ECE8794 /* writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		8B4319D8D32B453624596153D77D4A0C /* filereadstream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = filereadstream.h; sourceTree = "<group>"; };
+		9075208F569693EE4AADF1304770FA99 /* Pods-ZegoToken_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZegoToken_Tests-umbrella.h"; sourceTree = "<group>"; };
+		965BBFCF7717179711BE8A742A9666F7 /* itoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = itoa.h; sourceTree = "<group>"; };
+		9B1345DCE21B831C20D785DCD2ACC2C9 /* dtoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dtoa.h; sourceTree = "<group>"; };
+		9B6361B125EDE7DA75C5BE314C55EEB2 /* ZegoToken-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZegoToken-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A01BEBFD3786E03F55C6EAC906EEB03D /* Pods-ZegoToken_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZegoToken_Example-dummy.m"; sourceTree = "<group>"; };
+		A10C5E7278C34FEB4DDD7D3CE43A3906 /* pow10.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pow10.h; sourceTree = "<group>"; };
+		A13346BE1930A15B247FABC9149669F9 /* ZegoServerAssistantDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZegoServerAssistantDefines.h; sourceTree = "<group>"; };
+		A1356F2BB29BA9ED50D90484D1C56BB8 /* ZegoToken.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = ZegoToken.mm; sourceTree = "<group>"; };
+		A35D4005FF0169231553725AE9CCC4E0 /* meta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = meta.h; sourceTree = "<group>"; };
+		AC0A198059959223A1C7E598CF2309D9 /* ZegoToken-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZegoToken-prefix.pch"; sourceTree = "<group>"; };
+		AD995BA7592296564AB0709AB19957AE /* Pods-ZegoToken_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZegoToken_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B209067348F479138D43910ED2C8B8A6 /* istreamwrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = istreamwrapper.h; sourceTree = "<group>"; };
+		B209B5EA7048D0F0F4B9032C5E2E237E /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		B9502CA5F8CC050E699128EB0C6EDF6E /* README_EN.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README_EN.md; path = ZegoToken/Classes/README_EN.md; sourceTree = "<group>"; };
+		BD77D39CF2D8A3B93B8C51B939713143 /* Pods-ZegoToken_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZegoToken_Tests-dummy.m"; sourceTree = "<group>"; };
+		BD936E00FCBDC23BAF736BCB372A2BC4 /* ZegoCrypto.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = ZegoCrypto.hpp; sourceTree = "<group>"; };
+		BF98099D7F5EB06F07DB4D0D576F62A8 /* ZegoToken.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZegoToken.debug.xcconfig; sourceTree = "<group>"; };
+		C11B7B3744C877F8F8CD79F4DCE71094 /* fwd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = fwd.h; sourceTree = "<group>"; };
+		C48605496AA104BD59F8DF5DC0DA2C6C /* document.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = document.h; sourceTree = "<group>"; };
+		C58E6343EEDADD0E20126843453BDA46 /* ZegoServerAssistant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZegoServerAssistant.h; sourceTree = "<group>"; };
+		C7B3B14595C6120B79073E5E103F9CAA /* Pods-ZegoToken_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZegoToken_Tests.modulemap"; sourceTree = "<group>"; };
+		CDDB1203A9AEEB2B0D49A936D441B40F /* rapidjson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rapidjson.h; sourceTree = "<group>"; };
+		D7784DE31C2381FB4E39F64B9DF6AFAF /* Pods-ZegoToken_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZegoToken_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DA5416B43C073BDF062202CCD0202B4F /* ZegoServerAssistant.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = ZegoServerAssistant.cpp; sourceTree = "<group>"; };
+		DEEC5CEDABB1F4E198780ADBC685BBAE /* ZegoToken.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZegoToken.release.xcconfig; sourceTree = "<group>"; };
+		E5AC5B9F53AE9C03E6AF4B2DB74F40ED /* aes.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = aes.cpp; sourceTree = "<group>"; };
+		E8305E46B1754381E7439288833DFF15 /* Base64.cc */ = {isa = PBXFileReference; includeInIndex = 1; path = Base64.cc; sourceTree = "<group>"; };
+		E9EA5994B501C17FF333CE3AE297AE8F /* Pods-ZegoToken_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZegoToken_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F0E2CFB3F1C9DF7F8154703079FD17DB /* stringbuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
+		F179366D874579F12A6E58F088B6AC46 /* allocators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = allocators.h; sourceTree = "<group>"; };
+		F7B461B7E5C4A3F32B56DCB31BB4E7B7 /* Pods-ZegoToken_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZegoToken_Example"; path = Pods_ZegoToken_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82390519AB2D91E57CBA9F72755198C /* json_tools.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; path = json_tools.hpp; sourceTree = "<group>"; };
+		FF799B3A864C771CCCB963AB3DE53CDE /* ZegoToken.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZegoToken.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60EEEAF40B2AFB6D8BFB0F80EF5C39C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89BE78B7B05A23E44F06AC80C1B68960 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3259197AB2920D0A5410D7B12A4EA8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97AC086687D510957824F5DF1D4A7788 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7D8FB17062C88D3709DE93D3A1DA34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCFADACB7A96637F9D5D0ACBCCA465A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27E729BC2684289E7F91347AFFA2E5FE /* Pods-ZegoToken_Example */ = {
+			isa = PBXGroup;
+			children = (
+				72EBCA39231468208207BBB600F132D6 /* Pods-ZegoToken_Example.modulemap */,
+				D7784DE31C2381FB4E39F64B9DF6AFAF /* Pods-ZegoToken_Example-acknowledgements.markdown */,
+				4CD9C5A2871181DBFA079E71CD2BF25A /* Pods-ZegoToken_Example-acknowledgements.plist */,
+				A01BEBFD3786E03F55C6EAC906EEB03D /* Pods-ZegoToken_Example-dummy.m */,
+				AD995BA7592296564AB0709AB19957AE /* Pods-ZegoToken_Example-frameworks.sh */,
+				14776FCF3BB45656A46B981DE1872B7E /* Pods-ZegoToken_Example-Info.plist */,
+				073DABAF4EE8491D29BA1C2C87E6151A /* Pods-ZegoToken_Example-umbrella.h */,
+				4FC60984D37A44D2814F75E653313C39 /* Pods-ZegoToken_Example.debug.xcconfig */,
+				324FEB5E8E94E25DAF885875249248A9 /* Pods-ZegoToken_Example.release.xcconfig */,
+			);
+			name = "Pods-ZegoToken_Example";
+			path = "Target Support Files/Pods-ZegoToken_Example";
+			sourceTree = "<group>";
+		};
+		29761E8DF85F4091AEA574E84CD05FB4 /* rapidjson */ = {
+			isa = PBXGroup;
+			children = (
+				F179366D874579F12A6E58F088B6AC46 /* allocators.h */,
+				C48605496AA104BD59F8DF5DC0DA2C6C /* document.h */,
+				3BC00710B5197C6BED650A805A25BB95 /* encodedstream.h */,
+				53C302BF53A578041D85E7BD8E882CD1 /* encodings.h */,
+				8B4319D8D32B453624596153D77D4A0C /* filereadstream.h */,
+				467D12B7814054512F041AC6FF3D560F /* filewritestream.h */,
+				C11B7B3744C877F8F8CD79F4DCE71094 /* fwd.h */,
+				B209067348F479138D43910ED2C8B8A6 /* istreamwrapper.h */,
+				27A5F486917CA429F0890879531EF276 /* memorybuffer.h */,
+				62754F5FF7CBAD5AB9572A2EC7D4F97D /* memorystream.h */,
+				6132F354D00BA2897F7E692215A5F344 /* ostreamwrapper.h */,
+				446D2924E5BD0BB99A7771BF9C5E3818 /* pointer.h */,
+				7F0633A9D25984C27FC3E49DC6064238 /* prettywriter.h */,
+				CDDB1203A9AEEB2B0D49A936D441B40F /* rapidjson.h */,
+				1782A9AE16548B6E07D8D1826A81D8DA /* reader.h */,
+				6D6F96790C8B6C775522CF40A7B22887 /* schema.h */,
+				63DF88ED228E4ACCBC1F4DAB22584CEA /* stream.h */,
+				F0E2CFB3F1C9DF7F8154703079FD17DB /* stringbuffer.h */,
+				89D8CCE559E54611BC3321BA8ECE8794 /* writer.h */,
+				E92652D90117E0E98C80EDEDA90BDEE4 /* error */,
+				FC3F3EF21ED4742E3299F0729AAB2D07 /* internal */,
+			);
+			name = rapidjson;
+			path = ZegoToken/Classes/rapidjson;
+			sourceTree = "<group>";
+		};
+		524E7A4A77D2639B015EDE5FC6733147 /* ZegoToken */ = {
+			isa = PBXGroup;
+			children = (
+				28081D558DD0B1C3090EBF57B81733C5 /* README.md */,
+				B9502CA5F8CC050E699128EB0C6EDF6E /* README_EN.md */,
+				80BC18CD7A26C91825A3A7D25B40EE37 /* Pod */,
+				29761E8DF85F4091AEA574E84CD05FB4 /* rapidjson */,
+				6CC090571BCB4F4627BD18F94471B91C /* Support Files */,
+				675E0CEC27BF1DC4CBF6C5DF78C7486D /* token04 */,
+			);
+			name = ZegoToken;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5FE74A3C17F59845FE8871971BDB07D0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27E729BC2684289E7F91347AFFA2E5FE /* Pods-ZegoToken_Example */,
+				D0338B207F292D88B178C6EBDACD2D13 /* Pods-ZegoToken_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		675E0CEC27BF1DC4CBF6C5DF78C7486D /* token04 */ = {
+			isa = PBXGroup;
+			children = (
+				E5AC5B9F53AE9C03E6AF4B2DB74F40ED /* aes.cpp */,
+				B209B5EA7048D0F0F4B9032C5E2E237E /* aes.h */,
+				E8305E46B1754381E7439288833DFF15 /* Base64.cc */,
+				0261B1E56B8A7A44EB580E5A1B0CEAAD /* Base64.h */,
+				F82390519AB2D91E57CBA9F72755198C /* json_tools.hpp */,
+				25A61F8E1187830881BB9D8363E9DB87 /* ZegoCrypto.cpp */,
+				BD936E00FCBDC23BAF736BCB372A2BC4 /* ZegoCrypto.hpp */,
+				DA5416B43C073BDF062202CCD0202B4F /* ZegoServerAssistant.cpp */,
+				C58E6343EEDADD0E20126843453BDA46 /* ZegoServerAssistant.h */,
+				A13346BE1930A15B247FABC9149669F9 /* ZegoServerAssistantDefines.h */,
+				6CA3EB3CF9FAF043ACFCA257F49D260F /* ZegoServerAssistantImpl.cpp */,
+				1A38F26976BDE5EE60163371329A7DB5 /* ZegoServerAssistantImpl.h */,
+				09B833B006FBE286B599AFC1AE3B156B /* ZegoToken.h */,
+				A1356F2BB29BA9ED50D90484D1C56BB8 /* ZegoToken.mm */,
+			);
+			name = token04;
+			path = ZegoToken/Classes/token04;
+			sourceTree = "<group>";
+		};
+		6CC090571BCB4F4627BD18F94471B91C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF799B3A864C771CCCB963AB3DE53CDE /* ZegoToken.modulemap */,
+				9B6361B125EDE7DA75C5BE314C55EEB2 /* ZegoToken-dummy.m */,
+				68DA1FC8F2B7E18AD2CA40732AD43230 /* ZegoToken-Info.plist */,
+				AC0A198059959223A1C7E598CF2309D9 /* ZegoToken-prefix.pch */,
+				4B71E33BA97B0804E1F6233C46449963 /* ZegoToken-umbrella.h */,
+				BF98099D7F5EB06F07DB4D0D576F62A8 /* ZegoToken.debug.xcconfig */,
+				DEEC5CEDABB1F4E198780ADBC685BBAE /* ZegoToken.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZegoToken";
+			sourceTree = "<group>";
+		};
+		80BC18CD7A26C91825A3A7D25B40EE37 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				380D9667838A19714E9756F877720394 /* LICENSE */,
+				28B0B456ED082BBD718E826A2315308A /* README.md */,
+				77698FA2AF5CF09C3D47438BCC1D6A35 /* ZegoToken.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BF1364DDEC890EE520622680044B4C80 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				524E7A4A77D2639B015EDE5FC6733147 /* ZegoToken */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CCC89318A23466B9A2137F497D6F90AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7B461B7E5C4A3F32B56DCB31BB4E7B7 /* Pods-ZegoToken_Example */,
+				20039835D3D8FA9AEBD7772DAD8D0832 /* Pods-ZegoToken_Tests */,
+				4ED3C43653D6CC0AA34206B188BB20AD /* ZegoToken */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BF1364DDEC890EE520622680044B4C80 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				CCC89318A23466B9A2137F497D6F90AB /* Products */,
+				5FE74A3C17F59845FE8871971BDB07D0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0338B207F292D88B178C6EBDACD2D13 /* Pods-ZegoToken_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C7B3B14595C6120B79073E5E103F9CAA /* Pods-ZegoToken_Tests.modulemap */,
+				5185D40A042BC864F96F819839F97C3F /* Pods-ZegoToken_Tests-acknowledgements.markdown */,
+				E9EA5994B501C17FF333CE3AE297AE8F /* Pods-ZegoToken_Tests-acknowledgements.plist */,
+				BD77D39CF2D8A3B93B8C51B939713143 /* Pods-ZegoToken_Tests-dummy.m */,
+				55B7CE816E6442C36425F0A0313DB176 /* Pods-ZegoToken_Tests-Info.plist */,
+				9075208F569693EE4AADF1304770FA99 /* Pods-ZegoToken_Tests-umbrella.h */,
+				049D3BEB7FDCBE784B64FF3BCB0563E5 /* Pods-ZegoToken_Tests.debug.xcconfig */,
+				586D9F07D4FA5AF7B4AACFEF0280F83D /* Pods-ZegoToken_Tests.release.xcconfig */,
+			);
+			name = "Pods-ZegoToken_Tests";
+			path = "Target Support Files/Pods-ZegoToken_Tests";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E92652D90117E0E98C80EDEDA90BDEE4 /* error */ = {
+			isa = PBXGroup;
+			children = (
+				62C3280D41852DCE58B1CC7896B64662 /* en.h */,
+				864E997333729BEBEEED9ACC65A2737D /* error.h */,
+			);
+			name = error;
+			path = error;
+			sourceTree = "<group>";
+		};
+		FC3F3EF21ED4742E3299F0729AAB2D07 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				351ADE89C80D85712D313171751375DC /* biginteger.h */,
+				1CD8B54266CAD934C3174156E8CE447A /* diyfp.h */,
+				9B1345DCE21B831C20D785DCD2ACC2C9 /* dtoa.h */,
+				4877F6217C3A47962DA1377B2237ADCB /* ieee754.h */,
+				965BBFCF7717179711BE8A742A9666F7 /* itoa.h */,
+				A35D4005FF0169231553725AE9CCC4E0 /* meta.h */,
+				A10C5E7278C34FEB4DDD7D3CE43A3906 /* pow10.h */,
+				47DDCCFAB06513A141ABAA150D073881 /* regex.h */,
+				5E8D8D8FAFD44BBEEC4C5A587244CDE5 /* stack.h */,
+				54EB8C3EF3E6CCD5123B31F8E2852E02 /* strfunc.h */,
+				84DAC8300B59CE0A5F15BA1C47312BB1 /* strtod.h */,
+				89D0A2914F6809EC696258274D5E9C14 /* swap.h */,
+			);
+			name = internal;
+			path = internal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5F15F810B3B37796315C16A4B220BA30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E8C12289534153B3BDB573A4C71436 /* Pods-ZegoToken_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C302AA84F7207D9A86B9E3035CFD395 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E95A159A48384CAC96C8BB0C57CDA1 /* Pods-ZegoToken_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9466EAE981602E46689BA44ADDE8379 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB97E9BA41AB9FB84F07B81F30CDDD8 /* aes.h in Headers */,
+				A179C370AC69625B9AD0AE8858A2E7BA /* allocators.h in Headers */,
+				4DD25AB65A38D616604A8670CDE284AA /* Base64.h in Headers */,
+				7F925F5D599E325E30FC9D703ED1ABBF /* biginteger.h in Headers */,
+				A22BBD94CD2A43B08879D148D111CEA2 /* diyfp.h in Headers */,
+				F8F05708FFC8751BAAAC8601881263E6 /* document.h in Headers */,
+				B6B1C6FC7E4648F303DAA37478EFDDF4 /* dtoa.h in Headers */,
+				91F844FCB9AB056BF6CAF66B44FE4A07 /* en.h in Headers */,
+				3050ACF4241A6EB5E3911FE3A13161BF /* encodedstream.h in Headers */,
+				4280B54EA7E3E8596E2FAB968D27D995 /* encodings.h in Headers */,
+				636B22947416C82EB5143C6BBB2D2C3C /* error.h in Headers */,
+				E6894AF66E848C6C0FAFF9E77B964CE6 /* filereadstream.h in Headers */,
+				F3ED5F8A411BF4A05D773B107FDE7E29 /* filewritestream.h in Headers */,
+				DB83D6BCE0E7AE59863B4084B30B7FC6 /* fwd.h in Headers */,
+				037D93EFA644C1519468F3C8CFA4EEAE /* ieee754.h in Headers */,
+				959598A62C4A8BD24365F5BB162E3609 /* istreamwrapper.h in Headers */,
+				F75F65F2AF71376ED0259434F329AF26 /* itoa.h in Headers */,
+				910073290E4EFF8C430EBAC4C49B20EA /* json_tools.hpp in Headers */,
+				2911864DE80508A54C0E8B6BF0AFC316 /* memorybuffer.h in Headers */,
+				2EE681AC22DC8C553A0BD6F7585E51E2 /* memorystream.h in Headers */,
+				DB0F8622B93E7282EBF0BC07F05DF2CF /* meta.h in Headers */,
+				93858DF07DE6919DAA39F710B5C16163 /* ostreamwrapper.h in Headers */,
+				382A4FA3C94DF19AEA7B5DA9D5198CAE /* pointer.h in Headers */,
+				F79A909E338F87F79AC3BF61C62EF4CF /* pow10.h in Headers */,
+				57DAB4F842C612EB5CE9EBFF127D23F3 /* prettywriter.h in Headers */,
+				E930CB41E43A95430C21AB555564151D /* rapidjson.h in Headers */,
+				D1A2583D6104572EF625917084982860 /* reader.h in Headers */,
+				E23C745066199EC8474733B4048F6D4A /* regex.h in Headers */,
+				B27CB3A70735CA8ADD55A31A241D226D /* schema.h in Headers */,
+				1AF0C698576AE0A708E7FD88FD74AC2D /* stack.h in Headers */,
+				E09BBF932C1587FD72C815C615F0F0E2 /* stream.h in Headers */,
+				12FDC8030F3DEB3F7F8D5B32461B3525 /* strfunc.h in Headers */,
+				A72C8E98C2CD6D7DDA8E8DA6EDE750EB /* stringbuffer.h in Headers */,
+				91BFFADE2B4F39F221ED9F36C09498AD /* strtod.h in Headers */,
+				3A7FF63D3C6FCD6E194E9FAA82139B63 /* swap.h in Headers */,
+				3191B07E1CB1F6A23FB9ECAB23804795 /* writer.h in Headers */,
+				A70D155795B5DE0A808AF7DDA38A1DFB /* ZegoCrypto.hpp in Headers */,
+				ACC08E25136A3A986EF835BFCCEB7CFC /* ZegoServerAssistant.h in Headers */,
+				6B946EDFB902933BFD2264570BE6FD1D /* ZegoServerAssistantDefines.h in Headers */,
+				198F162A1CC5B8B7E2BF46C5ECFE6012 /* ZegoServerAssistantImpl.h in Headers */,
+				49C8DFD9C985E99DA3F05989F3AC6CBC /* ZegoToken.h in Headers */,
+				79DE978424DEE3A787ED908CFA43690B /* ZegoToken-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5300A48FBFEB5F3A22610DF3139169C8 /* Pods-ZegoToken_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5285387748F034470934141D79E33DE /* Build configuration list for PBXNativeTarget "Pods-ZegoToken_Tests" */;
+			buildPhases = (
+				5F15F810B3B37796315C16A4B220BA30 /* Headers */,
+				CD462BBF986131BE738E9687F804D7AD /* Sources */,
+				C3259197AB2920D0A5410D7B12A4EA8E /* Frameworks */,
+				AD6463BC7CD00FDB44F1EA09B2FF3AFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03FE7242A9343562200EDA761F9527C8 /* PBXTargetDependency */,
+			);
+			name = "Pods-ZegoToken_Tests";
+			productName = Pods_ZegoToken_Tests;
+			productReference = 20039835D3D8FA9AEBD7772DAD8D0832 /* Pods-ZegoToken_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		6D4BFB5B412CF9146C5E5CC7EB9F8240 /* Pods-ZegoToken_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1CD857BE8A6DB56EC59DAA11C5A3E4 /* Build configuration list for PBXNativeTarget "Pods-ZegoToken_Example" */;
+			buildPhases = (
+				9C302AA84F7207D9A86B9E3035CFD395 /* Headers */,
+				B6644B04729544B6F9CE74A7B1F20827 /* Sources */,
+				60EEEAF40B2AFB6D8BFB0F80EF5C39C9 /* Frameworks */,
+				54F15E18C4887EE8F4CF850D33C6AE09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C086F21ACE177E255250897EC9F60BE2 /* PBXTargetDependency */,
+			);
+			name = "Pods-ZegoToken_Example";
+			productName = Pods_ZegoToken_Example;
+			productReference = F7B461B7E5C4A3F32B56DCB31BB4E7B7 /* Pods-ZegoToken_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		C1E96DDD1ABD6BDAA28E9F623D75FE82 /* ZegoToken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4BD795B897B565624CD6A8F61C1C66A /* Build configuration list for PBXNativeTarget "ZegoToken" */;
+			buildPhases = (
+				F9466EAE981602E46689BA44ADDE8379 /* Headers */,
+				28C59C10FE2B5CBC73E55DE229A33746 /* Sources */,
+				CE7D8FB17062C88D3709DE93D3A1DA34 /* Frameworks */,
+				E7F9B25108D0896F17D6A91D1986DFE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZegoToken;
+			productName = ZegoToken;
+			productReference = 4ED3C43653D6CC0AA34206B188BB20AD /* ZegoToken */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CCC89318A23466B9A2137F497D6F90AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D4BFB5B412CF9146C5E5CC7EB9F8240 /* Pods-ZegoToken_Example */,
+				5300A48FBFEB5F3A22610DF3139169C8 /* Pods-ZegoToken_Tests */,
+				C1E96DDD1ABD6BDAA28E9F623D75FE82 /* ZegoToken */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54F15E18C4887EE8F4CF850D33C6AE09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6463BC7CD00FDB44F1EA09B2FF3AFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7F9B25108D0896F17D6A91D1986DFE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28C59C10FE2B5CBC73E55DE229A33746 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34EB16613858C0D39C95FB2B404D4BA /* aes.cpp in Sources */,
+				723C8C23048CFCA75317C1A4963E9BAD /* Base64.cc in Sources */,
+				1D86F3073F5E6E676027866F4EDD513C /* README.md in Sources */,
+				E31E49D1C856B16627F2F9B65C47EC18 /* README_EN.md in Sources */,
+				B6EB44736BB4431FA6DE2D647F7B83CD /* ZegoCrypto.cpp in Sources */,
+				900B53964841E8885EBC694336927F22 /* ZegoServerAssistant.cpp in Sources */,
+				A7F16AFD633078F77371EE1D2A143F94 /* ZegoServerAssistantImpl.cpp in Sources */,
+				59055A15661004DC3FEFA929A2C4A865 /* ZegoToken.mm in Sources */,
+				96534897E4F4B80AFA710223940AA887 /* ZegoToken-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6644B04729544B6F9CE74A7B1F20827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F37B75B2F97F7219AB26F1ACB04A7E /* Pods-ZegoToken_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD462BBF986131BE738E9687F804D7AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FCEFF7749DCBAD8209D20082F1E710 /* Pods-ZegoToken_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03FE7242A9343562200EDA761F9527C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ZegoToken_Example";
+			target = 6D4BFB5B412CF9146C5E5CC7EB9F8240 /* Pods-ZegoToken_Example */;
+			targetProxy = 5DB932298DBA4E3D267B79DC0A7245F1 /* PBXContainerItemProxy */;
+		};
+		C086F21ACE177E255250897EC9F60BE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZegoToken;
+			target = C1E96DDD1ABD6BDAA28E9F623D75FE82 /* ZegoToken */;
+			targetProxy = 28E0526FE9BCC04FEF6F27DFBD03B09A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AD3296AF6A099E47CD6FB505569FBDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 586D9F07D4FA5AF7B4AACFEF0280F83D /* Pods-ZegoToken_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZegoToken_Tests/Pods-ZegoToken_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZegoToken_Tests/Pods-ZegoToken_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0D2E697B4B29A3FBA24D150731857C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF98099D7F5EB06F07DB4D0D576F62A8 /* ZegoToken.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZegoToken/ZegoToken-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZegoToken/ZegoToken-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZegoToken/ZegoToken.modulemap";
+				PRODUCT_MODULE_NAME = ZegoToken;
+				PRODUCT_NAME = ZegoToken;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		363A3C7C89B9E8602257C81976D39899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 324FEB5E8E94E25DAF885875249248A9 /* Pods-ZegoToken_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZegoToken_Example/Pods-ZegoToken_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZegoToken_Example/Pods-ZegoToken_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FEDF69DC07FBF2B110C81F69E669BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049D3BEB7FDCBE784B64FF3BCB0563E5 /* Pods-ZegoToken_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZegoToken_Tests/Pods-ZegoToken_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZegoToken_Tests/Pods-ZegoToken_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BBEA0F51D92A0E976B293D32E6D2C3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEEC5CEDABB1F4E198780ADBC685BBAE /* ZegoToken.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZegoToken/ZegoToken-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZegoToken/ZegoToken-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZegoToken/ZegoToken.modulemap";
+				PRODUCT_MODULE_NAME = ZegoToken;
+				PRODUCT_NAME = ZegoToken;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D0A81A7FE4DFBD58617308269C3921E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC60984D37A44D2814F75E653313C39 /* Pods-ZegoToken_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZegoToken_Example/Pods-ZegoToken_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZegoToken_Example/Pods-ZegoToken_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE1CD857BE8A6DB56EC59DAA11C5A3E4 /* Build configuration list for PBXNativeTarget "Pods-ZegoToken_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0A81A7FE4DFBD58617308269C3921E6 /* Debug */,
+				363A3C7C89B9E8602257C81976D39899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4BD795B897B565624CD6A8F61C1C66A /* Build configuration list for PBXNativeTarget "ZegoToken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D2E697B4B29A3FBA24D150731857C86 /* Debug */,
+				BBEA0F51D92A0E976B293D32E6D2C3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5285387748F034470934141D79E33DE /* Build configuration list for PBXNativeTarget "Pods-ZegoToken_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEDF69DC07FBF2B110C81F69E669BAB /* Debug */,
+				0AD3296AF6A099E47CD6FB505569FBDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

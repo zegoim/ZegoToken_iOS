@@ -1,6 +1,6 @@
 # ZegoToken
 
-[![CI Status](https://img.shields.io/travis/LarryLuo1/ZegoToken.svg?style=flat)](https://travis-ci.org/LarryLuo1/ZegoToken)
+[![CI Status](https://img.shields.io/travis/LarryLuo/ZegoToken.svg?style=flat)](https://travis-ci.org/LarryLuo/ZegoToken)
 [![Version](https://img.shields.io/cocoapods/v/ZegoToken.svg?style=flat)](https://cocoapods.org/pods/ZegoToken)
 [![License](https://img.shields.io/cocoapods/l/ZegoToken.svg?style=flat)](https://cocoapods.org/pods/ZegoToken)
 [![Platform](https://img.shields.io/cocoapods/p/ZegoToken.svg?style=flat)](https://cocoapods.org/pods/ZegoToken)
@@ -22,7 +22,7 @@ pod 'ZegoToken'
 
 ## Author
 
-LarryLuo1, Larryluo@zego.im
+LarryLuo, Larryluo@zego.im
 
 ## License
 

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZegoToken'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ZegoToken.'
+  s.version          = '1.0.0'
+  s.summary          = 'ZegoToken This is a library for client-side generation of tokens for ease of testing.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/LarryLuo1/ZegoToken'
+  s.homepage         = 'https://github.com/zegoim/ZegoToken_iOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'LarryLuo1' => 'Larryluo@zego.im' }
-  s.source           = { :git => 'https://github.com/LarryLuo1/ZegoToken.git', :tag => s.version.to_s }
+  s.author           = { 'LarryLuo' => 'Larryluo@zego.im' }
+  s.source           = { :git => 'https://github.com/zegoim/ZegoToken_iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'

@@ -1,0 +1,16 @@
+PODS:
+  - ZegoToken (0.1.0)
+
+DEPENDENCIES:
+  - ZegoToken (from `../`)
+
+EXTERNAL SOURCES:
+  ZegoToken:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZegoToken: ea87ac0e06f4f9d5b74cafc0485fdabddfbe0cd1
+
+PODFILE CHECKSUM: 2f3c157c05ff4e9cab03e5aaea92d650a3735a37
+
+COCOAPODS: 1.11.2
